@@ -1,0 +1,17 @@
+name: 'Hello World Action'
+description: 'Send a hello world in a runner'
+inputs:
+  name:
+    description: 'La personne à dire bonjour'
+    required: true
+    default: 'Abdelhak'
+outputs:
+  response:
+    description: 'Réponse de l'action'
+runs:
+  using: 'node16'
+  main: 'index.js'
+
+
+# npm install @actions/core
+# npm install @actions/github
